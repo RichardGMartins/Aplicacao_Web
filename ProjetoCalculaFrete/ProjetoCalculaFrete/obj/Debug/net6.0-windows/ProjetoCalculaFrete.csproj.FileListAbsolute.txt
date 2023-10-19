@@ -1,0 +1,17 @@
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\bin\Debug\net6.0-windows\ProjetoCalculaFrete.exe
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\bin\Debug\net6.0-windows\ProjetoCalculaFrete.deps.json
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\bin\Debug\net6.0-windows\ProjetoCalculaFrete.runtimeconfig.json
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\bin\Debug\net6.0-windows\ProjetoCalculaFrete.dll
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\bin\Debug\net6.0-windows\ProjetoCalculaFrete.pdb
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.csproj.AssemblyReference.cache
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.Form1.resources
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.csproj.GenerateResource.cache
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.AssemblyInfoInputs.cache
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.AssemblyInfo.cs
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.csproj.CoreCompileInputs.cache
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.dll
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\refint\ProjetoCalculaFrete.dll
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.pdb
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ProjetoCalculaFrete.genruntimeconfig.cache
+C:\Users\richard.gmartins\source\repos\ProjetoCalculaFrete\ProjetoCalculaFrete\obj\Debug\net6.0-windows\ref\ProjetoCalculaFrete.dll

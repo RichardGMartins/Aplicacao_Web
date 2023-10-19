@@ -1,0 +1,17 @@
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\bin\Debug\net6.0-windows\Alcool ou Gasolina.exe
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\bin\Debug\net6.0-windows\Alcool ou Gasolina.deps.json
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\bin\Debug\net6.0-windows\Alcool ou Gasolina.runtimeconfig.json
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\bin\Debug\net6.0-windows\Alcool ou Gasolina.dll
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\bin\Debug\net6.0-windows\Alcool ou Gasolina.pdb
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.csproj.AssemblyReference.cache
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool_ou_Gasolina.Form1.resources
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.csproj.GenerateResource.cache
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.AssemblyInfoInputs.cache
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.AssemblyInfo.cs
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.csproj.CoreCompileInputs.cache
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.dll
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\refint\Alcool ou Gasolina.dll
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.pdb
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\Alcool ou Gasolina.genruntimeconfig.cache
+C:\Users\richard.gmartins\source\repos\Alcool ou Gasolina\Alcool ou Gasolina\obj\Debug\net6.0-windows\ref\Alcool ou Gasolina.dll
