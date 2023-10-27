@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "2XhA/IHSTao3CcwvzPIA70jaV0RJMrVrD1KCmdT0ACHuj82QO1QqO8b2U1QGi/A7CLISDm+L0s1vkGosiZPoQg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\richard.gmartins\\source\\repos\\ListaTarefas\\ListaTarefas\\ListaTarefas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\richard.gmartins\\.nuget\\packages\\pdfsharp\\1.50.5147\\pdfsharp.1.50.5147.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'PDFsharp 1.50.5147' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' em vez da estrutura de destino do projeto 'net6.0-windows7.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "PDFsharp",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

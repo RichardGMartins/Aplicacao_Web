@@ -1,0 +1,18 @@
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\bin\Debug\net6.0-windows\Projeto Salvar Senhas.exe
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\bin\Debug\net6.0-windows\Projeto Salvar Senhas.deps.json
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\bin\Debug\net6.0-windows\Projeto Salvar Senhas.runtimeconfig.json
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\bin\Debug\net6.0-windows\Projeto Salvar Senhas.dll
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\bin\Debug\net6.0-windows\Projeto Salvar Senhas.pdb
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.csproj.AssemblyReference.cache
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto_Salvar_Senhas.Form1.resources
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.csproj.GenerateResource.cache
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.AssemblyInfoInputs.cache
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.AssemblyInfo.cs
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.csproj.CoreCompileInputs.cache
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.dll
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\refint\Projeto Salvar Senhas.dll
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.pdb
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto Salvar Senhas.genruntimeconfig.cache
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\ref\Projeto Salvar Senhas.dll
+C:\Users\richard.gmartins\source\repos\Projeto Salvar Senhas\Projeto Salvar Senhas\obj\Debug\net6.0-windows\Projeto_Salvar_Senhas.Properties.Resources.resources
