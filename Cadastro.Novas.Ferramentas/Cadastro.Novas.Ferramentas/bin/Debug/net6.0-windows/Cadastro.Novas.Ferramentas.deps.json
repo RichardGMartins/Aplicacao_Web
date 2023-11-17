@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Cadastro.Novas.Ferramentas/1.0.0": {
+        "runtime": {
+          "Cadastro.Novas.Ferramentas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Cadastro.Novas.Ferramentas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

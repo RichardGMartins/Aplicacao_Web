@@ -48,6 +48,10 @@
             "PdfSharp": {
               "target": "Package",
               "version": "[1.50.5147, )"
+            },
+            "System.Text.Encoding.CodePages": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

@@ -224,6 +224,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmCadastro";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Cadastros";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

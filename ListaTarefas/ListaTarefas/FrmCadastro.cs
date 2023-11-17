@@ -10,6 +10,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 using PdfSharp.Pdf;
+using PdfSharp.Drawing;
+using System.Diagnostics;
 
 namespace ListaTarefas
 {
@@ -17,12 +19,10 @@ namespace ListaTarefas
 
     public partial class FrmCadastro : Form
     {
-        string name = "", cpf, telefone, dataNasc;
-        string caminho = ("C:\\Users\\richard.gmartins\\Desktop\\tarefas\\cadastrousuarios.txt");
-
         public FrmCadastro()
         {
             InitializeComponent();
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)
@@ -32,24 +32,29 @@ namespace ListaTarefas
 
         private void btSalvar_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "" || mtCPF.Text == "" || dateNasc.Text == "" || mtPhone.Text == "")
+            using (Bitmap capturaTela = CapturarTela())
             {
-                MessageBox.Show("Preencha todos os Campos!!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else
-            {
+                //Salva a imagem da tela em arquvio temporario
+                string tempImagePath = "C:\\Users\\richard.gmartins\\source\\repos\\ListaTarefas\\ListaTarefas\\arquivos\\temp.png";
+                capturaTela.Save(tempImagePath,ImageFormat.Png);
 
-                name = txtName.Text;
-                cpf = mtCPF.Text;
-                dataNasc = dateNasc.Text;
-                telefone = mtPhone.Text;
+                //Cria um doct PDF
+                PdfDocument pdfdoc = new PdfDocument();
+                PdfPage page = pdfdoc.AddPage();
+                XGraphics gfx = XGraphics.FromPdfPage(page);
 
-                using (StreamWriter writer = new StreamWriter(caminho, true))
-                {
-                    writer.WriteLine($"(Nome:{name}\nCPF:{cpf}\nDatadeNascimento:{dataNasc}\nTelefone:{telefone})\n");
-                    writer.WriteLine("---------------------------------------------------------------------------");
-                }
-                lblSalvo.Text = "Tarefa Adicionada!";
+                //Add a imagem da tela ao doct PDF
+                XImage image = XImage.FromFile(tempImagePath);
+                gfx.DrawImage(image, 0, 0);
+
+                //Salva em Pdf
+                string pdfFilePath = "C:\\Users\\richard.gmartins\\source\\repos\\ListaTarefas\\ListaTarefas\\arquivos\\ScreenShot.pdf";
+                pdfdoc.Save(pdfFilePath);
+
+                //Abre o pdc apos a execução
+                //Process.Start(pdfFilePath);
+                MessageBox.Show("Cadastro Feito.");
+
             }
 
         }
