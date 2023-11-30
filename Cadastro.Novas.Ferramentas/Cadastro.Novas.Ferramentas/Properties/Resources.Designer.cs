@@ -273,6 +273,16 @@ namespace Cadastro.Novas.Ferramentas.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ref_32 {
+            get {
+                object obj = ResourceManager.GetObject("ref_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap srch_32 {
             get {
                 object obj = ResourceManager.GetObject("srch_32", resourceCulture);

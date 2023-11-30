@@ -8,20 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using Cadastro.Novas.Ferramentas;
 
-namespace Cadastro.Novas.Ferramentas
+namespace Cadastro
 {
-    public partial class Form2 : Form
+    public partial class FrmFornecedor : Form
     {
-        public Form2()
+        public FrmFornecedor()
         {
             InitializeComponent();
             lblData.Text = DateTime.Now.ToLongDateString();
-            cbUF.DataSource = CarregaComboUf();
-            cbUF.ValueMember = "codigo";
-            cbUF.DisplayMember = "uf";
+            cbUf.DataSource = CarregaComboUf();
+            cbUf.ValueMember = "codigo";
+            cbUf.DisplayMember = "uf";
         }
-
         private DataTable CarregaComboUf()
         {
             try
@@ -41,39 +41,17 @@ namespace Cadastro.Novas.Ferramentas
                 return null;
             }
         }
-
-        private void button5_Click(object sender, EventArgs e)
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void lblTelefone_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnteste_Click(object sender, EventArgs e)
-        {
-            //Testar conexão com o bd
-            try
-            {
-                SqlConnection con = new SqlConnection(Dados.StringConexao);
-
-                con.Open();
-
-                con.Close();
-
-                MessageBox.Show("Conexão ok!");
-            }
-            catch (Exception erro)
-            {
-
-                MessageBox.Show(erro.Message);
-            }
-
-        }
-
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        private void btnPesquisar_Click(object sender, EventArgs e)
         {
 
         }

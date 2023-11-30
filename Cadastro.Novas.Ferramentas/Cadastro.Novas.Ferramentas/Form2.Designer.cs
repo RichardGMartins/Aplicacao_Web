@@ -55,6 +55,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.mtDTNASC = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnteste = new System.Windows.Forms.Button();
             this.btLimparDados = new System.Windows.Forms.Button();
             this.btExcluirCliente = new System.Windows.Forms.Button();
             this.btAlterarCliente = new System.Windows.Forms.Button();
@@ -64,9 +65,11 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tpData = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblData = new System.Windows.Forms.ToolStripStatusLabel();
             this.tpHora = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.lblHora = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -330,16 +333,31 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnteste);
             this.groupBox1.Controls.Add(this.btLimparDados);
             this.groupBox1.Controls.Add(this.btExcluirCliente);
             this.groupBox1.Controls.Add(this.btAlterarCliente);
             this.groupBox1.Controls.Add(this.btNovoCliente);
-            this.groupBox1.Location = new System.Drawing.Point(636, 131);
+            this.groupBox1.Location = new System.Drawing.Point(636, 122);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(225, 232);
+            this.groupBox1.Size = new System.Drawing.Size(225, 296);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Comandos";
+            // 
+            // btnteste
+            // 
+            this.btnteste.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnteste.Image = global::Cadastro.Novas.Ferramentas.Properties.Resources.ref_32;
+            this.btnteste.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnteste.Location = new System.Drawing.Point(21, 230);
+            this.btnteste.Name = "btnteste";
+            this.btnteste.Size = new System.Drawing.Size(159, 54);
+            this.btnteste.TabIndex = 29;
+            this.btnteste.Text = "Teste Conexão";
+            this.btnteste.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnteste.UseVisualStyleBackColor = true;
+            this.btnteste.Click += new System.EventHandler(this.btnteste_Click);
             // 
             // btLimparDados
             // 
@@ -403,14 +421,15 @@
             this.label12.Size = new System.Drawing.Size(162, 21);
             this.label12.TabIndex = 25;
             this.label12.Text = "Clientes Cadastrados :";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 395);
+            this.dataGridView1.Location = new System.Drawing.Point(15, 424);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(846, 246);
+            this.dataGridView1.Size = new System.Drawing.Size(846, 217);
             this.dataGridView1.TabIndex = 26;
             // 
             // statusStrip1
@@ -418,8 +437,10 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.tpData,
+            this.lblData,
+            this.tpHora,
             this.toolStripStatusLabel2,
-            this.tpHora});
+            this.lblHora});
             this.statusStrip1.Location = new System.Drawing.Point(0, 649);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(870, 22);
@@ -431,22 +452,35 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(47, 17);
             this.toolStripStatusLabel1.Text = "Hoje é :";
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // tpData
             // 
             this.tpData.Name = "tpData";
             this.tpData.Size = new System.Drawing.Size(0, 17);
             // 
-            // toolStripStatusLabel2
+            // lblData
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(49, 17);
-            this.toolStripStatusLabel2.Text = "|| E são :";
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(10, 17);
+            this.lblData.Text = ".";
             // 
             // tpHora
             // 
             this.tpHora.Name = "tpHora";
             this.tpHora.Size = new System.Drawing.Size(0, 17);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(46, 17);
+            this.toolStripStatusLabel2.Text = "|| e são:";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(10, 17);
+            this.lblHora.Text = ".";
             // 
             // Form2
             // 
@@ -537,8 +571,11 @@
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel tpData;
-        private ToolStripStatusLabel toolStripStatusLabel2;
+        private ToolStripStatusLabel lblData;
         private ToolStripStatusLabel tpHora;
         private System.Windows.Forms.Timer timer1;
+        private Button btnteste;
+        private ToolStripStatusLabel toolStripStatusLabel2;
+        private ToolStripStatusLabel lblHora;
     }
 }
