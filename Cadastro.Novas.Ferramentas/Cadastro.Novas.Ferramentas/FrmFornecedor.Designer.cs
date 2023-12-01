@@ -41,36 +41,37 @@
             this.lblCNPJ = new System.Windows.Forms.Label();
             this.lblCidade = new System.Windows.Forms.Label();
             this.tbCódigo = new System.Windows.Forms.TextBox();
-            this.tbNome = new System.Windows.Forms.TextBox();
-            this.tBEndereço = new System.Windows.Forms.TextBox();
-            this.tBCidade = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtEndereço = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.mTBPCNPJ = new System.Windows.Forms.MaskedTextBox();
             this.btnPesquisar = new System.Windows.Forms.Button();
-            this.mTBCep = new System.Windows.Forms.MaskedTextBox();
-            this.mTBTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.cbUf = new System.Windows.Forms.ComboBox();
+            this.mtCEP = new System.Windows.Forms.MaskedTextBox();
+            this.mtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.cbUF = new System.Windows.Forms.ComboBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblData = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lbHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.tBNumero = new System.Windows.Forms.TextBox();
+            this.txtNumero = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnImprimirTela = new System.Windows.Forms.Button();
             this.btnLimparDados = new System.Windows.Forms.Button();
             this.btnNovoCli = new System.Windows.Forms.Button();
             this.btnAlteraCli = new System.Windows.Forms.Button();
             this.btnExcluirCli = new System.Windows.Forms.Button();
-            this.dGFornecedor = new System.Windows.Forms.DataGridView();
+            this.dgFornecedor = new System.Windows.Forms.DataGridView();
             this.lblForcenedorCad = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.mTBCNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.mtCNPJ2 = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dGFornecedor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgFornecedor)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -174,26 +175,26 @@
             this.tbCódigo.Size = new System.Drawing.Size(78, 26);
             this.tbCódigo.TabIndex = 11;
             // 
-            // tbNome
+            // txtNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(94, 179);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(497, 26);
-            this.tbNome.TabIndex = 12;
+            this.txtNome.Location = new System.Drawing.Point(94, 179);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(497, 26);
+            this.txtNome.TabIndex = 12;
             // 
-            // tBEndereço
+            // txtEndereço
             // 
-            this.tBEndereço.Location = new System.Drawing.Point(94, 211);
-            this.tBEndereço.Name = "tBEndereço";
-            this.tBEndereço.Size = new System.Drawing.Size(393, 26);
-            this.tBEndereço.TabIndex = 13;
+            this.txtEndereço.Location = new System.Drawing.Point(94, 211);
+            this.txtEndereço.Name = "txtEndereço";
+            this.txtEndereço.Size = new System.Drawing.Size(393, 26);
+            this.txtEndereço.TabIndex = 13;
             // 
-            // tBCidade
+            // txtCidade
             // 
-            this.tBCidade.Location = new System.Drawing.Point(94, 243);
-            this.tBCidade.Name = "tBCidade";
-            this.tBCidade.Size = new System.Drawing.Size(255, 26);
-            this.tBCidade.TabIndex = 14;
+            this.txtCidade.Location = new System.Drawing.Point(94, 243);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(255, 26);
+            this.txtCidade.TabIndex = 14;
             // 
             // mTBPCNPJ
             // 
@@ -216,27 +217,27 @@
             this.btnPesquisar.UseVisualStyleBackColor = true;
             this.btnPesquisar.Click += new System.EventHandler(this.btnPesquisar_Click);
             // 
-            // mTBCep
+            // mtCEP
             // 
-            this.mTBCep.Location = new System.Drawing.Point(398, 245);
-            this.mTBCep.Mask = "00000-000";
-            this.mTBCep.Name = "mTBCep";
-            this.mTBCep.Size = new System.Drawing.Size(89, 26);
-            this.mTBCep.TabIndex = 18;
+            this.mtCEP.Location = new System.Drawing.Point(398, 245);
+            this.mtCEP.Mask = "00000-000";
+            this.mtCEP.Name = "mtCEP";
+            this.mtCEP.Size = new System.Drawing.Size(89, 26);
+            this.mtCEP.TabIndex = 18;
             // 
-            // mTBTelefone
+            // mtTelefone
             // 
-            this.mTBTelefone.Location = new System.Drawing.Point(360, 275);
-            this.mTBTelefone.Mask = "(00) 00000-0000";
-            this.mTBTelefone.Name = "mTBTelefone";
-            this.mTBTelefone.Size = new System.Drawing.Size(127, 26);
-            this.mTBTelefone.TabIndex = 19;
+            this.mtTelefone.Location = new System.Drawing.Point(360, 275);
+            this.mtTelefone.Mask = "(00) 00000-0000";
+            this.mtTelefone.Name = "mtTelefone";
+            this.mtTelefone.Size = new System.Drawing.Size(127, 26);
+            this.mtTelefone.TabIndex = 19;
             // 
-            // cbUf
+            // cbUF
             // 
-            this.cbUf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbUf.FormattingEnabled = true;
-            this.cbUf.Items.AddRange(new object[] {
+            this.cbUF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUF.FormattingEnabled = true;
+            this.cbUF.Items.AddRange(new object[] {
             "AC",
             "AL",
             "AP",
@@ -264,10 +265,10 @@
             "SC",
             "SE",
             "TO"});
-            this.cbUf.Location = new System.Drawing.Point(528, 248);
-            this.cbUf.Name = "cbUf";
-            this.cbUf.Size = new System.Drawing.Size(63, 26);
-            this.cbUf.TabIndex = 21;
+            this.cbUF.Location = new System.Drawing.Point(528, 248);
+            this.cbUF.Name = "cbUF";
+            this.cbUF.Size = new System.Drawing.Size(63, 26);
+            this.cbUF.TabIndex = 21;
             // 
             // statusStrip1
             // 
@@ -275,7 +276,8 @@
             this.toolStripStatusLabel1,
             this.lblData,
             this.toolStripStatusLabel2,
-            this.lbHora});
+            this.lbHora,
+            this.toolStripStatusLabel3});
             this.statusStrip1.Location = new System.Drawing.Point(0, 563);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(777, 22);
@@ -303,8 +305,14 @@
             // lbHora
             // 
             this.lbHora.Name = "lbHora";
-            this.lbHora.Size = new System.Drawing.Size(118, 17);
-            this.lbHora.Text = "toolStripStatusLabel3";
+            this.lbHora.Size = new System.Drawing.Size(41, 17);
+            this.lbHora.Text = "E São :";
+            // 
+            // toolStripStatusLabel3
+            // 
+            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
+            this.toolStripStatusLabel3.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
             // 
             // label1
             // 
@@ -315,12 +323,12 @@
             this.label1.TabIndex = 23;
             this.label1.Text = "N°";
             // 
-            // tBNumero
+            // txtNumero
             // 
-            this.tBNumero.Location = new System.Drawing.Point(528, 216);
-            this.tBNumero.Name = "tBNumero";
-            this.tBNumero.Size = new System.Drawing.Size(63, 26);
-            this.tBNumero.TabIndex = 24;
+            this.txtNumero.Location = new System.Drawing.Point(528, 216);
+            this.txtNumero.Name = "txtNumero";
+            this.txtNumero.Size = new System.Drawing.Size(63, 26);
+            this.txtNumero.TabIndex = 24;
             // 
             // groupBox1
             // 
@@ -373,6 +381,7 @@
             this.btnNovoCli.Text = "Novo Cliente";
             this.btnNovoCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNovoCli.UseVisualStyleBackColor = true;
+            this.btnNovoCli.Click += new System.EventHandler(this.btnNovoCli_Click);
             // 
             // btnAlteraCli
             // 
@@ -398,15 +407,15 @@
             this.btnExcluirCli.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnExcluirCli.UseVisualStyleBackColor = true;
             // 
-            // dGFornecedor
+            // dgFornecedor
             // 
-            this.dGFornecedor.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            this.dGFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGFornecedor.Location = new System.Drawing.Point(14, 349);
-            this.dGFornecedor.Name = "dGFornecedor";
-            this.dGFornecedor.RowTemplate.Height = 25;
-            this.dGFornecedor.Size = new System.Drawing.Size(748, 202);
-            this.dGFornecedor.TabIndex = 26;
+            this.dgFornecedor.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dgFornecedor.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgFornecedor.Location = new System.Drawing.Point(14, 349);
+            this.dgFornecedor.Name = "dgFornecedor";
+            this.dgFornecedor.RowTemplate.Height = 25;
+            this.dgFornecedor.Size = new System.Drawing.Size(748, 202);
+            this.dgFornecedor.TabIndex = 26;
             // 
             // lblForcenedorCad
             // 
@@ -431,13 +440,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Efetuar Pesquisa";
             // 
-            // mTBCNPJ
+            // mtCNPJ2
             // 
-            this.mTBCNPJ.Location = new System.Drawing.Point(94, 275);
-            this.mTBCNPJ.Mask = "00,000,000/0000-00";
-            this.mTBCNPJ.Name = "mTBCNPJ";
-            this.mTBCNPJ.Size = new System.Drawing.Size(155, 26);
-            this.mTBCNPJ.TabIndex = 29;
+            this.mtCNPJ2.Location = new System.Drawing.Point(94, 275);
+            this.mtCNPJ2.Mask = "00,000,000/0000-00";
+            this.mtCNPJ2.Name = "mtCNPJ2";
+            this.mtCNPJ2.Size = new System.Drawing.Size(155, 26);
+            this.mtCNPJ2.TabIndex = 29;
             // 
             // FrmFornecedor
             // 
@@ -445,19 +454,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(777, 585);
-            this.Controls.Add(this.mTBCNPJ);
+            this.Controls.Add(this.mtCNPJ2);
             this.Controls.Add(this.lblForcenedorCad);
-            this.Controls.Add(this.dGFornecedor);
+            this.Controls.Add(this.dgFornecedor);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.tBNumero);
+            this.Controls.Add(this.txtNumero);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.cbUf);
-            this.Controls.Add(this.mTBTelefone);
-            this.Controls.Add(this.mTBCep);
-            this.Controls.Add(this.tBCidade);
-            this.Controls.Add(this.tBEndereço);
-            this.Controls.Add(this.tbNome);
+            this.Controls.Add(this.cbUF);
+            this.Controls.Add(this.mtTelefone);
+            this.Controls.Add(this.mtCEP);
+            this.Controls.Add(this.txtCidade);
+            this.Controls.Add(this.txtEndereço);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblCidade);
             this.Controls.Add(this.lblCNPJ);
             this.Controls.Add(this.lblCep);
@@ -478,7 +487,7 @@
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dGFornecedor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgFornecedor)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
@@ -499,24 +508,24 @@
         private Label lblCNPJ;
         private Label lblCidade;
         private TextBox tbCódigo;
-        private TextBox tbNome;
-        private TextBox tBEndereço;
-        private TextBox tBCidade;
+        private TextBox txtNome;
+        private TextBox txtEndereço;
+        private TextBox txtCidade;
         private MaskedTextBox mTBPCNPJ;
         private Button btnPesquisar;
-        private MaskedTextBox mTBCep;
-        private MaskedTextBox mTBTelefone;
-        private ComboBox cbUf;
+        private MaskedTextBox mtCEP;
+        private MaskedTextBox mtTelefone;
+        private ComboBox cbUF;
         private StatusStrip statusStrip1;
         private System.Windows.Forms.Timer timer1;
         private Label label1;
-        private TextBox tBNumero;
+        private TextBox txtNumero;
         private GroupBox groupBox1;
         private Button btnLimparDados;
         private Button btnNovoCli;
         private Button btnAlteraCli;
         private Button btnExcluirCli;
-        private DataGridView dGFornecedor;
+        private DataGridView dgFornecedor;
         private Label lblForcenedorCad;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel lblData;
@@ -524,6 +533,7 @@
         private ToolStripStatusLabel lbHora;
         private Button btnImprimirTela;
         private GroupBox groupBox2;
-        private MaskedTextBox mTBCNPJ;
+        private MaskedTextBox mtCNPJ2;
+        private ToolStripStatusLabel toolStripStatusLabel3;
     }
 }

@@ -40,7 +40,7 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEndereço = new System.Windows.Forms.TextBox();
-            this.txtCIDADE = new System.Windows.Forms.TextBox();
+            this.txtCidade = new System.Windows.Forms.TextBox();
             this.txtCompl = new System.Windows.Forms.TextBox();
             this.mtCPF = new System.Windows.Forms.MaskedTextBox();
             this.btPesquisar = new System.Windows.Forms.Button();
@@ -61,18 +61,20 @@
             this.btAlterarCliente = new System.Windows.Forms.Button();
             this.btNovoCliente = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgCliente = new System.Windows.Forms.DataGridView();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.tpData = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblData = new System.Windows.Forms.ToolStripStatusLabel();
             this.tpHora = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.lblHora = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.mtCPF2 = new System.Windows.Forms.MaskedTextBox();
+            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,7 +162,7 @@
             this.txtNome.Location = new System.Drawing.Point(82, 191);
             this.txtNome.Margin = new System.Windows.Forms.Padding(4);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(504, 29);
+            this.txtNome.Size = new System.Drawing.Size(339, 29);
             this.txtNome.TabIndex = 8;
             // 
             // txtEndereço
@@ -171,13 +173,13 @@
             this.txtEndereço.Size = new System.Drawing.Size(318, 29);
             this.txtEndereço.TabIndex = 9;
             // 
-            // txtCIDADE
+            // txtCidade
             // 
-            this.txtCIDADE.Location = new System.Drawing.Point(87, 279);
-            this.txtCIDADE.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCIDADE.Name = "txtCIDADE";
-            this.txtCIDADE.Size = new System.Drawing.Size(184, 29);
-            this.txtCIDADE.TabIndex = 10;
+            this.txtCidade.Location = new System.Drawing.Point(87, 279);
+            this.txtCidade.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCidade.Name = "txtCidade";
+            this.txtCidade.Size = new System.Drawing.Size(184, 29);
+            this.txtCidade.TabIndex = 10;
             // 
             // txtCompl
             // 
@@ -411,6 +413,7 @@
             this.btNovoCliente.Text = "Novo Cliente";
             this.btNovoCliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btNovoCliente.UseVisualStyleBackColor = true;
+            this.btNovoCliente.Click += new System.EventHandler(this.btNovoCliente_Click);
             // 
             // label12
             // 
@@ -423,14 +426,14 @@
             this.label12.Text = "Clientes Cadastrados :";
             this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
-            // dataGridView1
+            // dgCliente
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 424);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(846, 217);
-            this.dataGridView1.TabIndex = 26;
+            this.dgCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgCliente.Location = new System.Drawing.Point(15, 424);
+            this.dgCliente.Name = "dgCliente";
+            this.dgCliente.RowTemplate.Height = 25;
+            this.dgCliente.Size = new System.Drawing.Size(846, 217);
+            this.dgCliente.TabIndex = 26;
             // 
             // statusStrip1
             // 
@@ -482,14 +485,37 @@
             this.lblHora.Size = new System.Drawing.Size(10, 17);
             this.lblHora.Text = ".";
             // 
+            // mtCPF2
+            // 
+            this.mtCPF2.Location = new System.Drawing.Point(491, 190);
+            this.mtCPF2.Margin = new System.Windows.Forms.Padding(4);
+            this.mtCPF2.Mask = "000,000,000-00";
+            this.mtCPF2.Name = "mtCPF2";
+            this.mtCPF2.Size = new System.Drawing.Size(135, 29);
+            this.mtCPF2.TabIndex = 29;
+            this.mtCPF2.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(439, 194);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(44, 21);
+            this.label13.TabIndex = 28;
+            this.label13.Text = "CPF :";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(870, 671);
+            this.Controls.Add(this.mtCPF2);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgCliente);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.mtDTNASC);
@@ -505,7 +531,7 @@
             this.Controls.Add(this.btPesquisar);
             this.Controls.Add(this.mtCPF);
             this.Controls.Add(this.txtCompl);
-            this.Controls.Add(this.txtCIDADE);
+            this.Controls.Add(this.txtCidade);
             this.Controls.Add(this.txtEndereço);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.txtCodigo);
@@ -527,7 +553,7 @@
             this.Text = "Cadastro Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgCliente)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -547,7 +573,7 @@
         private TextBox txtCodigo;
         private TextBox txtNome;
         private TextBox txtEndereço;
-        private TextBox txtCIDADE;
+        private TextBox txtCidade;
         private TextBox txtCompl;
         private MaskedTextBox mtCPF;
         private Button btPesquisar;
@@ -567,7 +593,7 @@
         private Button btAlterarCliente;
         private Button btNovoCliente;
         private Label label12;
-        private DataGridView dataGridView1;
+        private DataGridView dgCliente;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel toolStripStatusLabel1;
         private ToolStripStatusLabel tpData;
@@ -577,5 +603,7 @@
         private Button btnteste;
         private ToolStripStatusLabel toolStripStatusLabel2;
         private ToolStripStatusLabel lblHora;
+        private MaskedTextBox mtCPF2;
+        private Label label13;
     }
 }

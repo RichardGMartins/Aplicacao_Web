@@ -28,5 +28,11 @@ namespace Cadastro.Novas.Ferramentas
             Form2 cliente = new Form2();
             cliente.ShowDialog();
         }
+
+        private void fornecedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFornecedor fornecedor= new FrmFornecedor();
+            fornecedor.ShowDialog();
+        }
     }
 }
